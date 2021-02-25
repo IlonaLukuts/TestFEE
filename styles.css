@@ -133,6 +133,8 @@ a {
   align-self: center;
   background-color: #314584;
   color: white;
+  font-weight: bold;
+  font-family: 'Work Sans';
   border: none;
   width: 50%;
 }
@@ -144,7 +146,7 @@ a {
   background-color: white;
   color: #ff3946;
   width: 80%;
-  box-shadow: 0px 3px 5px black;
+  box-shadow: 0px 3px 5px #6e757a;
   border-radius: 10px;
   padding: 10px;
   height: 40px;
@@ -159,6 +161,62 @@ a {
   .header-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+  }
+  .menu-button-container {
+    display: none;
+  }
+  .menu-container {
+    position: static;
+    order: 1;
+    width: 75%;
+  }
+  .menu-items-container {
+    visibility: visible;
+    flex-direction: row;
+    justify-content: space-around;
+    position: static;
+    background-color: white;
+  }
+  .menu-items-container nav {
+    display: inline;
+    width: 50%;
+  }
+  .menu-items-container .navigation-list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .menu-items-container .navigation-list li a {
+    color: #314584;
+  }
+  .menu-items-container .wrapper {
+    flex-direction: row;
     justify-content: space-between;
+    width: 25%;
+  }
+  .menu-items-container .wrapper select {
+    width: fit-content;
+    background-color: white;
+    color: #314584;
+    font-weight: bold;
+    font-family: "Work Sans";
+  }
+  .menu-items-container .wrapper .contact-container {
+    height: 30px;
+    width: auto;
+  }
+  .menu-items-container .wrapper .contact-container .image-wrapper {
+    height: 100%;
+    width: auto;
+  }
+  .menu-items-container .wrapper .contact-container .image-wrapper img {
+    width: auto;
+    height: 100%;
+  }
+  .logo {
+    order: 0;
+    width: 15%;
+    margin: 0;
   }
 }

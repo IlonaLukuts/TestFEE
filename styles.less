@@ -157,20 +157,22 @@ a {
             align-self: center;
             background-color: rgb(49, 69, 132);
             color: white;
+            font-weight: bold;
+            font-family: 'Work Sans';
             border: none;
             width: 50%;
         }
 
         .contact-container {
             align-self: center;
-            
+
             display: flex;
             align-items: center;
             justify-content: space-around;
             background-color: white;
             color: @color-red;
             width: 80%;
-            box-shadow: 0px 3px 5px black;
+            box-shadow: 0px 3px 5px @color-grey;
             border-radius: 10px;
             padding: 10px;
             height: 40px;
@@ -178,17 +180,11 @@ a {
             .image-wrapper {
                 width: 15%;
             }
-            img{
+            img {
                 width: 100%;
             }
         }
     }
 }
 
-@media (min-width: 768px) {
-    .header-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
+@import url("styles_desktop.less");

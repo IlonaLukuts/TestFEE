@@ -1,0 +1,78 @@
+@color-red: rgb(255, 57, 70);
+@color-blue: rgb(49, 69, 132);
+@color-light-blue: rgb(195, 208, 216);
+@color-grey: rgb(110, 117, 122);
+
+@media (min-width: 768px) {
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .menu-button-container {
+        display: none;
+    }
+
+    .menu-container {
+        position: static;
+        order: 1;
+        width: 75%;
+    }
+
+    .menu-items-container {
+        visibility: visible;
+        flex-direction: row;
+        justify-content: space-around;
+        position: static;
+        background-color: white;
+
+        nav {
+            display: inline;
+            width: 50%;
+        }
+
+        .navigation-list {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+
+            li a {
+                color: @color-blue;
+            }
+        }
+        .wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 25%;
+
+            select {
+                width: fit-content;
+                background-color: white;
+                color: @color-blue;
+                font-weight: bold;
+                font-family: "Work Sans";
+            }
+            .contact-container {
+                height: 30px;
+                width: auto;
+            }
+
+            .contact-container .image-wrapper {
+                height: 100%;
+                width: auto;
+
+                img {
+                    width: auto;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .logo {
+        order: 0;
+        width: 15%;
+        margin: 0;
+    }
+}
