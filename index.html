@@ -8,33 +8,50 @@
     </head>
     <body>
         <header>
-            <div>
-                <img src="images/logo.png" class="logo" />
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="index.html">Home.</a>
-                        </li>
-                        <li>
-                            <a href="">About us.</a>
-                        </li>
-                        <li>
-                            <a href="">Portfolio.</a>
-                        </li>
-                        <li>
-                            <a href="">Blog.</a>
-                        </li>
-                        <li>
-                            <a href="">Contact us.</a>
-                        </li>
-                    </ul>
-                </nav>
-                <select>
-                    <option selected>EN</option>
-                </select>
-                <div>
-                    <p>Contact Us</p>
-                    <img src="" />
+            <div class="header-container">
+                <div class="menu-container">
+                    <input type="checkbox" id="menu-toggle" />
+                    <label class="menu-button-container" for="menu-toggle">
+                        <span></span>
+                    </label>
+
+                    <div class="menu-items-container">
+                        <nav>
+                            <ul class="navigation-list">
+                                <li>
+                                    <a href="index.html">Home.</a>
+                                </li>
+                                <li>
+                                    <a href="">About us.</a>
+                                </li>
+                                <li>
+                                    <a href="">Portfolio.</a>
+                                </li>
+                                <li>
+                                    <a href="">Blog.</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact us.</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="wrapper">
+                            <select>
+                                <option selected>EN</option>
+                            </select>
+                            <div class="contact-container">
+                                <p>Contact Us</p>
+                                <div class="image-wrapper">
+                                    <img src="images/arrow.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="logo">
+                    <img src="images/logo.png" />
                 </div>
             </div>
         </header>
