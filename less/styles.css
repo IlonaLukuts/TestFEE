@@ -204,6 +204,39 @@ a {
 #slider-container {
   display: none;
 }
+.works-container {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  font-size: 1.9em;
+  font-weight: 600;
+  color: #314584;
+}
+.examples-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.example-wrapper {
+  background-color: #c3d0d8;
+  padding-top: 21%;
+  width: 30%;
+  position: relative;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+.example {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.see-more-button {
+  color: #ff3946;
+  align-self: center;
+  font-weight: 600;
+}
 @media (min-width: 768px) {
   .header-container {
     display: flex;
