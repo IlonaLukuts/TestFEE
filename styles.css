@@ -10,6 +10,12 @@
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: "Work Sans";
+  src: local("Work Sans"), url(fonts/WorkSans-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
 body {
   font-family: "Work Sans";
 }
@@ -134,7 +140,7 @@ a {
   background-color: #314584;
   color: white;
   font-weight: bold;
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   border: none;
   width: 50%;
 }
@@ -156,6 +162,45 @@ a {
 }
 .menu-items-container .wrapper .contact-container img {
   width: 100%;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.info-container {
+  display: flex;
+}
+.slider {
+  display: none;
+}
+.info-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.info-text-container h1 {
+  font-weight: 600;
+  margin: 0;
+  font-size: 3.5em;
+  color: #314584;
+}
+.info-text-container p {
+  color: #6e757a;
+}
+.buttons-container {
+  display: flex;
+  font-weight: bold;
+}
+.buttons-container .more-about-us-button {
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #ff3946;
+  color: white;
+}
+.buttons-container .get-in-touch-button {
+  padding: 15px;
+  color: #314584;
 }
 @media (min-width: 768px) {
   .header-container {
@@ -216,7 +261,12 @@ a {
   }
   .logo {
     order: 0;
-    width: 15%;
-    margin: 0;
+    width: 10%;
+    display: flex;
+    align-items: center;
+  }
+  .main-container {
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
