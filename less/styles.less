@@ -1,20 +1,20 @@
 @font-face {
     font-family: "Work Sans";
-    src: local("Work Sans"), url(fonts/WorkSans-Regular.ttf);
+    src: local("Work Sans"), url(../fonts/WorkSans-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Work Sans";
-    src: local("Work Sans"), url(fonts/WorkSans-Bold.ttf);
+    src: local("Work Sans"), url(../fonts/WorkSans-Bold.ttf);
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Work Sans";
-    src: local("Work Sans"), url(fonts/WorkSans-SemiBold.ttf);
+    src: local("Work Sans"), url(../fonts/WorkSans-SemiBold.ttf);
     font-weight: 600;
     font-style: normal;
 }
@@ -23,6 +23,8 @@
 @color-blue: rgb(49, 69, 132);
 @color-light-blue: rgb(195, 208, 216);
 @color-grey: rgb(110, 117, 122);
+
+@margin-main-content: 5%;
 
 body {
     font-family: "Work Sans";
@@ -198,20 +200,19 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    margin-left: @margin-main-content;
+    margin-right: @margin-main-content;
 }
 
 .info-container {
     display: flex;
 }
 
-.slider{
-    display: none;
-}
-
 .info-text-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 
     h1 {
         font-weight: 600;
@@ -238,6 +239,10 @@ a {
         padding: 15px;
         color: @color-blue;
     }
+}
+
+#slider-container {
+    display: none;
 }
 
 @import url("styles_desktop.less");

@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Work Sans";
-  src: local("Work Sans"), url(fonts/WorkSans-Regular.ttf);
+  src: local("Work Sans"), url(../fonts/WorkSans-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Work Sans";
-  src: local("Work Sans"), url(fonts/WorkSans-Bold.ttf);
+  src: local("Work Sans"), url(../fonts/WorkSans-Bold.ttf);
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Work Sans";
-  src: local("Work Sans"), url(fonts/WorkSans-SemiBold.ttf);
+  src: local("Work Sans"), url(../fonts/WorkSans-SemiBold.ttf);
   font-weight: 600;
   font-style: normal;
 }
@@ -167,17 +167,16 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .info-container {
   display: flex;
 }
-.slider {
-  display: none;
-}
 .info-text-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 }
 .info-text-container h1 {
   font-weight: 600;
@@ -201,6 +200,9 @@ a {
 .buttons-container .get-in-touch-button {
   padding: 15px;
   color: #314584;
+}
+#slider-container {
+  display: none;
 }
 @media (min-width: 768px) {
   .header-container {
@@ -268,5 +270,17 @@ a {
   .main-container {
     margin-left: 15%;
     margin-right: 15%;
+  }
+  #slider-container {
+    display: block;
+    width: 50%;
+  }
+  .slider-image-wrapper {
+    display: flex;
+    margin: auto;
+    align-items: center;
+  }
+  .slider-image-wrapper img {
+    width: 100%;
   }
 }

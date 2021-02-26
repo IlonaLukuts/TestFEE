@@ -3,7 +3,7 @@
 @color-light-blue: rgb(195, 208, 216);
 @color-grey: rgb(110, 117, 122);
 
-@margin-main-content: 15%;
+@margin-main-content-desktop: 15%;
 
 @media (min-width: 768px) {
     .header-container {
@@ -80,7 +80,22 @@
     }
 
     .main-container {
-        margin-left: @margin-main-content;
-        margin-right: @margin-main-content;
+        margin-left: @margin-main-content-desktop;
+        margin-right: @margin-main-content-desktop;
+    }
+
+    #slider-container {
+        display: block;
+        width: 50%;
+    }
+
+    .slider-image-wrapper {
+        display: flex;
+        margin: auto;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
     }
 }
