@@ -23,11 +23,16 @@
 @color-blue: rgb(49, 69, 132);
 @color-light-blue: rgb(195, 208, 216);
 @color-grey: rgb(110, 117, 122);
+@color-lighter-blue: rgb(244, 250, 254);
 
 @margin-main-content: 5%;
 
 body {
     font-family: "Work Sans";
+}
+
+section {
+    margin: 50px 0px;
 }
 
 a {
@@ -284,6 +289,54 @@ h2 {
     color: @color-red;
     align-self: center;
     font-weight: 600;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        color: @color-red;
+        margin-bottom: 0;
+    }
+
+    @margin: 15px;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: @margin;
+    }
+
+    .fieldappearance() {
+        font-family: inherit;
+        color: @color-blue;
+        background-color: @color-lighter-blue;
+        font-weight: bold;
+        border: none;
+        padding: 10px;
+    }
+
+    input {
+        .fieldappearance();
+        width: 45%;
+    }
+
+    textarea {
+        .fieldappearance();
+        margin-bottom: @margin;
+        resize: none;
+    }
+
+    .submit-button {
+        min-width: fit-content;
+        width: 20%;
+        align-self: center;
+        color: white;
+        background-color: @color-red;
+        font-weight: 600;
+        border-radius: 10px;
+    }
 }
 
 @import url("styles_desktop.less");
