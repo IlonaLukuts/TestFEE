@@ -281,6 +281,53 @@ h2 {
   font-weight: 600;
   border-radius: 10px;
 }
+.footer-container {
+  background-color: #314584;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-container + p {
+  margin-bottom: 0;
+}
+.footer-container h2 {
+  color: #ff3946;
+}
+.footer-container nav {
+  width: 50%;
+}
+.footer-container .navigation-list {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-container .navigation-list li {
+  list-style-type: none;
+}
+.footer-container .navigation-list li a {
+  color: white;
+}
+.footer-container .navigation-list li a:active {
+  color: #314584;
+}
+.footer-container .navigation-list li a:hover {
+  background-color: white;
+  color: #314584;
+}
+.address-container {
+  display: flex;
+}
+.address-container .image-wrapper {
+  display: flex;
+  align-items: center;
+  width: 50px;
+}
+.address-container .image-wrapper img {
+  width: 100%;
+}
+.rights {
+  font-size: 0.7em;
+}
 @media (min-width: 768px) {
   .header-container {
     display: flex;
