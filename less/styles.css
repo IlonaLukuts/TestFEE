@@ -156,6 +156,7 @@ section {
   border: none;
   width: 50%;
   margin-bottom: 10px;
+  min-width: fit-content;
 }
 .contact-container {
   align-self: center;
@@ -302,19 +303,22 @@ h2 {
   width: 50%;
 }
 .footer-container .navigation-list {
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  padding: 0;
 }
 .footer-title {
   margin-bottom: 0;
 }
 .address-container {
   display: flex;
-  width: 170px;
+  width: 240px;
   justify-content: space-between;
   margin-bottom: 15px;
 }
 .address-container .image-wrapper {
-  width: 50px;
+  width: 30px;
 }
 .rights {
   font-size: 0.7em;
@@ -393,5 +397,8 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  .footer-container .navigation-list {
+    flex-direction: row;
   }
 }
