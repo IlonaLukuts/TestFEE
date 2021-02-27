@@ -155,6 +155,7 @@ section {
   font-family: "Work Sans";
   border: none;
   width: 50%;
+  margin-bottom: 10px;
 }
 .contact-container {
   align-self: center;
@@ -294,9 +295,6 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
-.footer-container + p {
-  margin-bottom: 0;
-}
 .footer-container h2 {
   color: #ff3946;
 }
@@ -306,16 +304,21 @@ h2 {
 .footer-container .navigation-list {
   justify-content: space-around;
 }
+.footer-title {
+  margin-bottom: 0;
+}
 .address-container {
   display: flex;
   width: 170px;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 .address-container .image-wrapper {
   width: 50px;
 }
 .rights {
   font-size: 0.7em;
+  margin-bottom: 15px;
 }
 @media (min-width: 768px) {
   .header-container {
@@ -361,6 +364,8 @@ h2 {
     color: #314584;
     font-weight: bold;
     font-family: "Work Sans";
+    margin-bottom: 0;
+    margin-right: 10%;
   }
   .contact-container {
     height: 30px;

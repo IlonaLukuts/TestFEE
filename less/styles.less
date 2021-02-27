@@ -189,6 +189,7 @@ section {
         font-family: "Work Sans";
         border: none;
         width: 50%;
+        margin-bottom: 10px;
     }
 }
 
@@ -357,10 +358,6 @@ h2 {
     flex-direction: column;
     align-items: center;
 
-    & + p {
-        margin-bottom: 0;
-    }
-
     h2 {
         color: @color-red;
     }
@@ -374,12 +371,17 @@ h2 {
     }
 }
 
+.footer-title {
+    margin-bottom: 0;
+}
+
 @socials-width: 50px;
 
 .address-container {
     display: flex;
     width: @socials-width*3+10px*2;
     justify-content: space-between;
+    margin-bottom: 15px;
 
     .image-wrapper {
         width: 50px;
@@ -388,6 +390,7 @@ h2 {
 
 .rights {
     font-size: 0.7em;
+    margin-bottom: 15px;
 }
 
 @import url("styles_desktop.less");
