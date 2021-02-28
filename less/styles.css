@@ -22,6 +22,9 @@ body {
 section {
   margin: 50px 0px;
 }
+a {
+  text-decoration: none;
+}
 .navigation-list {
   display: flex;
 }
@@ -29,7 +32,6 @@ section {
   list-style-type: none;
 }
 .navigation-list li a {
-  text-decoration: none;
   color: white;
 }
 .navigation-list li a:active {
@@ -49,13 +51,20 @@ section {
   height: 100%;
   object-fit: cover;
 }
+.button {
+  border-radius: 20px;
+  padding: 10px;
+}
+.button:hover {
+  box-shadow: 0px 0px 3px #6e757a;
+}
 .header-container {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.logo {
-  width: 60%;
+.logo-link {
+  width: 50%;
   align-self: center;
 }
 .menu-container {
@@ -158,14 +167,16 @@ section {
   margin-bottom: 10px;
   min-width: fit-content;
 }
-.contact-container {
+.contact-link {
   align-self: center;
+  width: 80%;
+}
+.contact-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: white;
   color: #ff3946;
-  width: 80%;
   box-shadow: 0px 3px 5px #6e757a;
   border-radius: 10px;
   padding: 10px;
@@ -204,7 +215,6 @@ section {
 }
 .more-about-us-button {
   padding: 15px;
-  border-radius: 20px;
   background-color: #ff3946;
   color: white;
 }
@@ -229,21 +239,21 @@ h2 {
   flex-wrap: wrap;
   align-content: space-around;
 }
-.example-wrapper {
-  background-color: #c3d0d8;
+.example-link {
   padding-top: 21%;
   width: 30%;
   position: relative;
   margin-right: 2%;
   margin-bottom: 2%;
 }
-.example {
+.example-wrapper {
+  background-color: #c3d0d8;
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
 }
-.see-more-button {
+.see-more-button-link {
   color: #ff3946;
   align-self: center;
   font-weight: 600;
@@ -268,6 +278,7 @@ h2 {
   font-weight: bold;
   border: none;
   padding: 10px;
+  outline: none;
   width: 45%;
 }
 .form-container textarea {
@@ -277,6 +288,7 @@ h2 {
   font-weight: bold;
   border: none;
   padding: 10px;
+  outline: none;
   margin-bottom: 15px;
   resize: none;
 }
@@ -375,7 +387,7 @@ h2 {
     height: 30px;
     width: auto;
   }
-  .logo {
+  .logo-link {
     order: 0;
     width: 10%;
     height: 20%;
