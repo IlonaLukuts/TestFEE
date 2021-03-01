@@ -28,6 +28,7 @@
         justify-content: space-around;
         position: static;
         background-color: white;
+        color: @color-blue;
 
         nav {
             display: inline;
@@ -50,14 +51,32 @@
         justify-content: space-between;
         width: 25%;
 
-        select {
-            width: fit-content;
-            background-color: white;
+        //        select {
+        //            width: fit-content;
+        //            background-color: white;
+        //            color: @color-blue;
+        //            font-weight: bold;
+        //            font-family: "Work Sans";
+        //            margin-bottom: 0;
+        //            margin-right: 10%;
+        //        }
+
+        .select-container .ui-icon {
+            background-image: url("..//images/select-arrow-blue.png");
+        }
+    }
+
+    #lang-select-menu {
+        background-color: white;
+        color: @color-blue;
+        font-weight: bold;
+        font-family: inherit;
+        border: none;
+
+        .ui-state-active {
+            border: 1px solid @color-blue;
+            background-color: @color-light-blue;
             color: @color-blue;
-            font-weight: bold;
-            font-family: "Work Sans";
-            margin-bottom: 0;
-            margin-right: 10%;
         }
     }
 

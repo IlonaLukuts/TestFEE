@@ -193,17 +193,55 @@ a {
     display: flex;
     flex-direction: column;
 
-    select {
-        //display: none;
-        align-self: center;
-        background-color: rgb(49, 69, 132);
-        color: white;
-        font-weight: bold;
-        font-family: "Work Sans";
-        border: none;
-        width: 50%;
-        margin-bottom: 10px;
-        min-width: fit-content;
+    //select {
+    //display: none;
+    //    align-self: center;
+    //  background-color: rgb(49, 69, 132);
+    //  color: white;
+    //  font-weight: bold;
+    //  font-family: inherit;
+    //  border: none;
+    //  width: 50%;
+    //  margin-bottom: 10px;
+    // min-width: fit-content;
+    //}
+
+    .select-container {
+        display: flex;
+        align-items: center;
+
+        & > span {
+            background-color: inherit;
+            color: inherit;
+            font-weight: bold;
+            font-family: inherit;
+            border: none;
+            width: 3em;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .ui-icon {
+            background-image: url("..//images/select-arrow-white.png");
+            background-position: initial;
+            background-size: cover;
+        }
+    }
+}
+
+#lang-select-menu {
+    background-color: @color-blue;
+    color: white;
+    font-weight: bold;
+    font-family: inherit;
+    border: none;
+
+    .ui-state-active {
+        border: 1px solid @color-light-blue;
+        background-color: white;
+        color: @color-blue;
     }
 }
 

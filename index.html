@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="less/styles.css" />
         <link rel="stylesheet" href="slick/slick.css" />
         <link rel="stylesheet" href="slick/slick-theme.css" />
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     </head>
     <body>
         <header>
@@ -40,11 +41,11 @@
 
                         <div class="lang-contact-container">
                             <div class="lang-container select-container">
-                                <select>
-                                    <option selected value="0">EN</option>
-                                    <option value="1">RU</option>
-                                    <option value="2">PL</option>
-                                    <option value="3">UK</option>
+                                <select id="lang-select">
+                                    <option selected>EN</option>
+                                    <option>RU</option>
+                                    <option>PL</option>
+                                    <option>UK</option>
                                 </select>
                             </div>
 
@@ -210,9 +211,11 @@
             </div>
         </footer>
 
-        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="slick/slick.min.js"></script>
+
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
