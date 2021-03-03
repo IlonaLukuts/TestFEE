@@ -99,14 +99,6 @@ a {
     align-self: center;
 }
 
-.menu-container {
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 55%;
-}
-
 #menu-toggle {
     display: none;
 
@@ -188,7 +180,7 @@ a {
     font-weight: bold;
     transition-duration: 0.25s;
     padding: 30px;
-    width: 100%;
+    width: 60%;
 
     .navigation-list {
         flex-direction: column;
@@ -334,11 +326,12 @@ h2 {
 .examples-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-content: space-around;
 }
 
 .example-link {
-    @width-example: 30%;
+    @width-example: 236px;
 
     padding-top: 0.7 * @width-example;
     width: @width-example;
@@ -443,7 +436,6 @@ h2 {
 
     nav {
         margin-bottom: 35px;
-        width: 50%;
     }
 
     .navigation-list {
@@ -479,4 +471,5 @@ h2 {
     margin-bottom: 40px;
 }
 
+@import url("styles_tablet.less");
 @import url("styles_desktop.less");
