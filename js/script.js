@@ -1,9 +1,5 @@
 $(document).ready(function () {
-    $(".slider-container").slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: "linear",
-    });
+    $(".slider-container").slick({});
 });
+
+$("#lang-select").selectmenu();

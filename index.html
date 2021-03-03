@@ -7,19 +7,27 @@
         <link rel="stylesheet" href="less/styles.css" />
         <link rel="stylesheet" href="slick/slick.css" />
         <link rel="stylesheet" href="slick/slick-theme.css" />
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link
+            rel="stylesheet"
+            href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+        />
     </head>
     <body>
         <header>
             <div class="header-container">
-                <div class="menu-container">
+                <a href="index.html" class="logo-link">
+                    <div class="image-wrapper">
+                        <img src="images/logo.png" />
+                    </div>
+                </a>
+                <div class="menu-container col-12">
                     <input type="checkbox" id="menu-toggle" />
                     <label class="menu-button-container" for="menu-toggle">
                         <span></span>
                     </label>
 
-                    <div class="menu-items-container">
-                        <nav>
+                    <div class="menu-items-container col-12">
+                        <nav class="col-6">
                             <ul class="navigation-list">
                                 <li>
                                     <a href="index.html">Home.</a>
@@ -39,7 +47,7 @@
                             </ul>
                         </nav>
 
-                        <div class="lang-contact-container">
+                        <div class="lang-contact-container col-3">
                             <div class="lang-container select-container">
                                 <select id="lang-select">
                                     <option selected>EN</option>
@@ -49,7 +57,7 @@
                                 </select>
                             </div>
 
-                            <a href="" class="contact-link">
+                            <a href="" class="contact-link col-2">
                                 <div class="contact-container button">
                                     <p>Contact Us</p>
                                     <div class="image-wrapper">
@@ -61,29 +69,32 @@
                     </div>
                 </div>
 
-                <a href="index.html" class="logo-link">
-                    <div class="image-wrapper">
-                        <img src="images/logo.png" />
-                    </div>
-                </a>
+                <div class="logo-copy-container"></div>
+
             </div>
         </header>
 
         <main>
-            <div class="main-container">
+            <div class="main-container col-12">
                 <section>
                     <div class="info-container">
-                        <div class="info-text-container">
+                        <div class="info-text-container col-6">
                             <h1>The Spirit of Digital Agency.</h1>
                             <p>
                                 Vestibulum ac diam sit amet quam vehicula
                                 elementum amet est on dui. Nulla porttitor
                                 accumsan tincidunt.
                             </p>
-                            <div class="buttons-container">
+                            <div class="buttons-container col-4">
                                 <a href="">
-                                    <div class="more-about-us-button button">
-                                        More About us
+                                    <div
+                                        class="more-about-us-button-container col-2"
+                                    >
+                                        <div
+                                            class="more-about-us-button button"
+                                        >
+                                            More About us
+                                        </div>
                                     </div>
                                 </a>
                                 <a href="">
@@ -93,7 +104,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="slider-container" id="slider-container">
+                        <div class="slider-container col-6" id="slider-container">
                             <div class="image-wrapper">
                                 <img src="images/pic.jpg" />
                             </div>
@@ -106,7 +117,7 @@
 
                 <section>
                     <div class="works-container">
-                        <h2>See some of our<br />Creative work.</h2>
+                        <h2 class="col-4">See some of our Creative work.</h2>
                         <div class="examples-container">
                             <a href="" class="example-link">
                                 <div class="example-wrapper"></div>
@@ -127,8 +138,8 @@
                                 <div class="example-wrapper"></div>
                             </a>
                         </div>
-                        <a href="" class="see-more-button-link">
-                            <div class="button">See More of These.</div>
+                        <a href="" class="see-more-button-link col-2">
+                            <div class="">See More of These.</div>
                         </a>
                     </div>
                 </section>
@@ -139,16 +150,21 @@
                             <h3>CONTACT US</h3>
                             <h2>Get in Touch</h2>
                             <div>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    placeholder="Your email"
-                                />
-                                <input
+                                <div class="email-subject-container">
+                                <div class="">
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        placeholder="Your email"
+                                    />
+                                </div>
+                                <div class="subject-container">
+                                    <input
                                     type="text"
                                     name="subject"
                                     placeholder="Subject"
-                                />
+                                    />
+                                </div>
                             </div>
                             <textarea
                                 name="message"
@@ -156,7 +172,7 @@
                             ></textarea>
                             <input
                                 type="submit"
-                                class="submit-button button"
+                                class="submit-button button col-2"
                                 value="Send Message"
                             />
                         </div>
