@@ -1,181 +1,89 @@
-@color-red: rgb(255, 57, 70);
-@color-blue: rgb(49, 69, 132);
-@color-light-blue: rgb(195, 208, 216);
-@color-grey: rgb(110, 117, 122);
-
-@width-main-content-desktop: 750px;
-@full-width-desktop: 768px;
-@padding-width: 0.025 * @full-width-desktop;
+@width-main-content-desktop: 1170px;
+@full-width-desktop: 1200px;
+@padding-width-desktop: 0.025 * @full-width-desktop;
 
 @media (min-width: @full-width-desktop) {
-    [class*="col-"] {
-        padding-right: @padding-width;
+    [class*="col-lg-"] {
+        padding-right: @padding-width-desktop;
     }
 
-    .col-1 {
+    .col-lg-1 {
         width: 0.0833 * @full-width-desktop;
     }
 
-    .col-2 {
+    .col-lg-2 {
         width: 0.1666 * @full-width-desktop;
     }
 
-    .col-3 {
+    .col-lg-3 {
         width: 0.25 * @full-width-desktop;
     }
 
-    .col-4 {
+    .col-lg-4 {
         width: 0.3333 * @full-width-desktop;
     }
 
-    .col-5 {
+    .col-lg-5 {
         width: 0.4166 * @full-width-desktop;
     }
 
-    .col-6 {
+    .col-lg-6 {
         width: 0.5 * @full-width-desktop;
     }
 
-    .col-7 {
+    .col-lg-7 {
         width: 0.58 * @full-width-desktop;
     }
 
-    .col-8 {
+    .col-lg-8 {
         width: 0.6666 * @full-width-desktop;
     }
 
-    .col-9 {
+    .col-lg-9 {
         width: 0.75 * @full-width-desktop;
     }
 
-    .col-10 {
+    .col-lg-10 {
         width: 0.8333 * @full-width-desktop;
     }
 
-    .col-11 {
+    .col-lg-11 {
         width: 0.9166 * @full-width-desktop;
     }
 
-    .col-12 {
+    .col-lg-12 {
         width: @width-main-content-desktop;
-    }
-
-    .header-container {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .menu-button-container {
-        display: none;
     }
 
     .menu-container {
         padding-right: 0;
-        position: static;
     }
 
     .menu-items-container {
-        visibility: visible;
-        flex-direction: row;
-        justify-content: space-between;
-        position: static;
-        background-color: white;
-        color: @color-blue;
         padding: 0;
-
-        nav {
-            display: inline;
-        }
-
-        .navigation-list {
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-
-            li a {
-                color: @color-blue;
-            }
-        }
     }
 
     .lang-contact-container {
-        flex-direction: row;
-        justify-content: space-between;
         padding: 0;
-
-        .select-container {
-            .ui-button:active .ui-icon,
-            .ui-button:focus .ui-icon,
-            .ui-button:hover .ui-icon,
-            .ui-icon {
-                background-image: url("..//images/select-arrow-blue.png");
-            }
-        }
     }
 
     .contact-link {
-        margin-top: 0;
         padding: 0;
-    }
-
-    #lang-select-menu {
-        background-color: white;
-        color: @color-blue;
-        font-weight: bold;
-        font-family: inherit;
-        border: none;
-
-        .ui-state-active {
-            border: 1px solid @color-blue;
-            background-color: @color-light-blue;
-            color: @color-blue;
-        }
-    }
-
-    .logo-link {
-        width: 70px;
-    }
-
-    .logo-copy-container {
-        width: 70px;
     }
 
     .main-container {
         padding: 0;
-        margin: auto;
-    }
-
-    .info-text-container {
-        flex-shrink: 0;
     }
 
     #slider-container {
-        display: block;
         padding: 0;
         max-width: 0.58 * @full-width-desktop;
         height: 0.58 * @full-width-desktop;
         margin-left: 0.0833 * @full-width-desktop;
     }
 
-    .slider-image-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-
-    .buttons-container {
-        justify-content: space-between;
-
-        .more-about-us-button-container {
-            padding: 0;
-        }
+    .buttons-container .more-about-us-button-container {
+        padding: 0;
     }
 
     .works-container {
@@ -185,57 +93,37 @@
 
         .see-more-button-link {
             padding-right: 0;
-            display: flex;
-            justify-content: center;
         }
     }
 
-    .examples-container {
-        justify-content: space-between;
-    }
-
     .example-link {
-        @example-width: 0.3333 * @full-width-desktop - @padding-width;
+        @example-width: 0.3333 * @full-width-desktop - @padding-width-desktop;
 
         width: @example-width;
         padding-top: 0;
         height: 0.7 * @example-width;
-        margin: 0;
-        margin-bottom: @padding-width;
-    }
-
-    .example-wrapper {
-        background-color: @color-light-blue;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
+        margin-bottom: @padding-width-desktop;
     }
 
     .form-container > div {
         .email-subject-container {
-            margin-bottom: @padding-width;
+            margin-bottom: @padding-width-desktop;
             div {
-                width: 0.5 * @full-width-desktop - @padding-width;
+                width: 0.5 * @full-width-desktop - @padding-width-desktop;
             }
         }
 
         textarea {
-            margin-top: 0;
-            margin-bottom: @padding-width;
+            margin-bottom: @padding-width-desktop;
         }
     }
 
     .form-container .submit-button {
-        .col-2();
-        margin-top: @padding-width;
-    }
-
-    .footer-container .navigation-list {
-        flex-direction: row;
+        .col-lg-2();
+        margin-top: @padding-width-desktop;
     }
 
     .footer-container nav {
-        width: 0.5 * @full-width-desktop - @padding-width;
+        width: 0.5 * @full-width-desktop - @padding-width-desktop;
     }
 }
